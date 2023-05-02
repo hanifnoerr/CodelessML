@@ -120,6 +120,8 @@ if data is not None:
         st.text(f'Using {splitRatio} % of the data as data train, with the splitting result:')
         st.write('train shape:',X_train.shape , 'test shape:', X_test.shape)
         #modelling classficiation
+        st.write('training...')
+        st.write('Done!')
         lr = LinearRegression()
         lr.fit(X_train, y_train)
         y_pred_lr = lr.predict(X_test) 
