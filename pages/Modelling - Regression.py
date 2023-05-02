@@ -121,7 +121,6 @@ if data is not None:
         st.write('train shape:',X_train.shape , 'test shape:', X_test.shape)
         #modelling classficiation
         st.write('training...')
-        st.write('Done!')
         lr = LinearRegression()
         lr.fit(X_train, y_train)
         y_pred_lr = lr.predict(X_test) 
@@ -230,6 +229,7 @@ if data is not None:
             'MAE': [mae_lr, mae_svmr, mae_knn, mae_eln, mae_par, mae_rf, mae_gbr, mae_lgbm, mae_xgboost],
             'MAPE': [mape_lr, mape_svmr, mape_knn, mape_eln, mape_par, mape_rf, mape_gbr, mape_lgbm, mape_xgboost]
                             })
+        st.write('Done!') ## for training...
         st.write('sample data used as train')
         st.dataframe(X.head(3))
         
