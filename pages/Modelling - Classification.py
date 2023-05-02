@@ -120,6 +120,8 @@ if data is not None:
         st.text(f'Using {splitRatio} % of the data as data train, with the splitting result:')
         st.write('train shape:',X_train.shape , 'test shape:', X_test.shape)
         #modelling classficiation
+        st.write('training...')
+        st.write('Done!')
         #LR
         lr = LogisticRegression(random_state=77, max_iter=10000)
         lr.fit(X_train, y_train)
