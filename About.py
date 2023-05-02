@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title('CodelessML')
-st.caption('A web-based application to making Machine Learning tasks easier for anyone who wants to learn and create machine learning model without coding.')
+st.caption('A web-based application for anyone who wants to learn and create machine learning model without coding.')
 
 st.subheader('What is CodelessML')
 st.write(' ini diisi abstrak kali ya, apa latar belakang')
