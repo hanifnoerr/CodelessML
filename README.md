@@ -56,8 +56,8 @@ The following datasets were used for the development and testing of this applica
 
 <a name="c3">**[3]**</a>Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 785–794). ACM.
 
-<a name="c3">**[4]**</a>Aeberhard,Stefan & Forina,M.. (1991). Wine. UCI Machine Learning Repository. https://doi.org/10.24432/C5PC7J.
-<a name="c3">**[5]**</a>Schlimmer,Jeffrey. (1987). Automobile. UCI Machine Learning Repository. https://doi.org/10.24432/C5B01C.
+<a name="c4">**[4]**</a>Aeberhard,Stefan & Forina,M.. (1991). Wine. UCI Machine Learning Repository. https://doi.org/10.24432/C5PC7J.
+<a name="c5">**[5]**</a>Schlimmer,Jeffrey. (1987). Automobile. UCI Machine Learning Repository. https://doi.org/10.24432/C5B01C.
 
 # License
 
