@@ -119,9 +119,10 @@ if data is not None:
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=1-splitRatio/100, random_state=77, stratify=y)
         st.text(f'Using {splitRatio} % of the data as data train, with the splitting result:')
         st.write('train shape:',X_train.shape , 'test shape:', X_test.shape)
+        st.write('sample data used as train')
+        st.dataframe(X.head(3))
         #modelling classficiation
         st.write('training...')
-        st.write('Done!')
         #LR
         lr = LogisticRegression(random_state=77, max_iter=10000)
         lr.fit(X_train, y_train)
@@ -221,8 +222,7 @@ if data is not None:
             'Precission': [prec_lr, prec_svm, prec_knn, prec_mnb, prec_dt, prec_rf, prec_gbc, prec_lgbm, prec_xgboost],
             'F1 Score': [f1_lr, f1_svm, f1_knn, f1_mnb, f1_dt, f1_rf, f1_gbc, f1_lgbm, f1_xgboost],
                             })
-        st.write('sample data used as train')
-        st.dataframe(X.head(3))
+        st.write('Done!')
         
         st.write('Result & Model Comparison')
         st.dataframe(models.sort_values(by='F1 Score', ascending=False).style.format())
