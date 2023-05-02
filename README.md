@@ -61,7 +61,7 @@ This application is made using Streamlit, to deploy you can clone this repo and 
 To deploy on local machine, you can use [Anaconda](https://www.anaconda.com/) and import [this environment](https://#).
 Once your environment is ready, download this repo and run this following command
 ```
-cd \your CodelessML directory\
+cd \to your CodelessML directory\
 streamlit run About.py
 ```
 
