@@ -40,7 +40,16 @@ In the following you will find how they are supposed to be used.
 | LightGBM      	|        [[2]](#c2)        	|
 | XGBoost          |        [[3]](#c3)           |
 
-## Installation on local machine
+## Installation 
+This application is made using Streamlit, to deploy clone this repo and follow [this official guide](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app)
+
+### deploy on local machine
+To deploy on local machine, you can use [Anaconda](https://www.anaconda.com/) and import [this environment](https://#).
+Once your environment is ready, download this repo and run this following command
+```
+cd \your CodelessML directory\
+streamlit run About.py
+```
 
 ## Dataset
 
