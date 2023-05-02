@@ -20,7 +20,7 @@ In the following you will find how they are supposed to be used.
 ## How to use
 
 1. Explore and understand your data using the EDA menu (e.g., descriptive statistics, data visualisation, correlation matrix, etc.)
-2. Go to the Modelling menu. [Modelling - Classification] is for the classification task, and [Modelling – Regression] is for the regression task. Choose the menus that best suit your problem. Then select the target variable and determine the ratio of data that will be used for training and testing your model. After that, click submit, and the application will automatically perform data processing and training ML models.
+2. Go to the Modelling menu. [Modelling - Classification] for the classification task, and [Modelling – Regression] for the regression task. Choose the menu that best suit your problem then select the target variable and determine the ratio of data that will be used for training and testing your model. click submit, and the application will automatically perform data processing and training ML models.
 3. Determine which model you want to save and Click “Select model to download”. You will get model.joblib and encoder.pkl as well as the original data that have been encoded with label encoder inside a zipped folder.
 4. Use the model.joblib and encoder.pkl to predict your new data in the “Prediction Menu” and save the result by clicking the “Downlaod Output File” button.
 
