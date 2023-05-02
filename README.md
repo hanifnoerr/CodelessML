@@ -37,27 +37,27 @@ In the following you will find how they are supposed to be used.
 | Decision Tree            	| [[1]](#c1) 	|
 | Random Forest       	|  [[1]](#c1) 	|
 | Gradient Boosting   	|        [[1]](#c1)        	|
-| LightGBM      	|        [[1]](#c2)        	|
-| XGBoost          |        [[1]](#c3)           |
+| LightGBM      	|        [[2]](#c2)        	|
+| XGBoost          |        [[3]](#c3)           |
 
 ## Installation on local machine
 
 ## Dataset
 
 The following datasets were used for the development and testing of this application:
-- Classification Task:
-  - Aeberhard,Stefan & Forina,M.. (1991). Wine. UCI Machine Learning Repository. https://doi.org/10.24432/C5PC7J.
-- Regression Task:
-  - Schlimmer,Jeffrey. (1987). Automobile. UCI Machine Learning Repository. https://doi.org/10.24432/C5B01C.
+- Classification Task: Wine Dataset[[4]](#c4)
+- Regression Task: Automobile Dataset[[5]](#c5)
   
 # References
 
 <a name="c1">**[1]**</a>Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, E. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 12, 2825–2830.
  
-<a name="c1">**[2]**</aKe, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T.Y. (2017). Lightgbm: A highly efficient gradient boosting decision tree. Advances in neural information processing systems, 30, 3146–3154.
+<a name="c2">**[2]**</a>Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T.Y. (2017). Lightgbm: A highly efficient gradient boosting decision tree. Advances in neural information processing systems, 30, 3146–3154.
 
-<a name="c1">**[3]**</a>Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 785–794). ACM.
+<a name="c3">**[3]**</a>Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 785–794). ACM.
 
+<a name="c3">**[4]**</a>Aeberhard,Stefan & Forina,M.. (1991). Wine. UCI Machine Learning Repository. https://doi.org/10.24432/C5PC7J.
+<a name="c3">**[5]**</a>Schlimmer,Jeffrey. (1987). Automobile. UCI Machine Learning Repository. https://doi.org/10.24432/C5B01C.
 
 # License
 
