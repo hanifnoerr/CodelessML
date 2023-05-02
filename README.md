@@ -40,8 +40,22 @@ In the following you will find how they are supposed to be used.
 | LightGBM      	|        [[2]](#c2)        	|
 | XGBoost          |        [[3]](#c3)           |
 
+* Regression Task:
+
+| Name                                	|          Reference         	|
+|--------------------------------------	|:--------------------------:	|
+| Linear Regression    	|        [[1]](#c1)        	|
+| Support Vector Regression       	|        [[1]](#c1)       	|
+| K-Nearest Neighbor       	|        [[1]](#c1)       	|
+| Elastic Net                 	|  [[1]](#c1) 	|
+| Passive Aggressive Regressor            	| [[1]](#c1) 	|
+| Random Forest       	|  [[1]](#c1) 	|
+| Gradient Boosting   	|        [[1]](#c1)        	|
+| LightGBM      	|        [[2]](#c2)        	|
+| XGBoost          |        [[3]](#c3)           |
+
 ## Installation 
-This application is made using Streamlit, to deploy clone this repo and follow [this official guide](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app)
+This application is made using Streamlit, to deploy you can clone this repo and follow [this official guide](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app)
 
 ### deploy on local machine
 To deploy on local machine, you can use [Anaconda](https://www.anaconda.com/) and import [this environment](https://#).
