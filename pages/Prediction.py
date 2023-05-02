@@ -7,14 +7,14 @@ from io import StringIO
 import glob
 from sklearn.preprocessing import OrdinalEncoder
 #load model's libraries
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import LinearSVC
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression, LinearRegression, ElasticNet, PassiveAggressiveRegressor
+from sklearn.svm import LinearSVC, SVR
+from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import GradientBoostingClassifier
-from lightgbm import LGBMClassifier
+from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.ensemble import GradientBoostingClassifier, GradientBoostingRegressor
+from lightgbm import LGBMClassifier, LGBMRegressor
 import xgboost as xgb
 
 #another libs
@@ -24,7 +24,7 @@ import joblib
 
 st.cache_data
 
-data = st.file_uploader('Upload your data here, the file name must be "test" (ex: test.csv)', type=['csv','xlsx', 'xls'])
+data = st.file_uploader('Upload your data here', type=['csv','xlsx', 'xls'])
 encoder = st.file_uploader('Please upload encoder.pkl', type=['pkl'])
 model = st.file_uploader('Please upload model.joblib', type=['joblib'])
 if data and encoder and model is not None:
