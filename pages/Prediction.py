@@ -46,6 +46,7 @@ if data and encoder and model is not None:
         df = pd.read_excel(data) #catatan perlu openpyxl sama xlrd (buat xls)
 
     #load model & encoder
+    st.write('loading files...')
     modelnya = joblib.load('model.joblib')
     encoder_prod = joblib.load('encoder.pkl')
     columns_list = df.columns.to_list()
