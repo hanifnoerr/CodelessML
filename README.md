@@ -26,7 +26,7 @@ In the following you will find how they are supposed to be used.
 
 ## Available machine learning algorithms
 
-* Classification Task:
+### Classification Task:
 
 | Name                                	|          Reference         	|
 |--------------------------------------	|:--------------------------:	|
@@ -40,7 +40,7 @@ In the following you will find how they are supposed to be used.
 | LightGBM      	|        [[2]](#c2)        	|
 | XGBoost          |        [[3]](#c3)           |
 
-* Regression Task:
+### Regression Task:
 
 | Name                                	|          Reference         	|
 |--------------------------------------	|:--------------------------:	|
@@ -57,7 +57,7 @@ In the following you will find how they are supposed to be used.
 ## Installation 
 This application is made using Streamlit, to deploy you can clone this repo and follow [this official guide](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app)
 
-### deploy on local machine
+### Deploy on local machine
 To deploy on local machine, you can use [Anaconda](https://www.anaconda.com/) and import [this environment](https://#).
 Once your environment is ready, download this repo and run this following command
 ```
@@ -68,19 +68,20 @@ streamlit run About.py
 ## Dataset
 
 The following datasets were used for the development and testing of this application:
-- Classification Task: Wine Dataset[[4]](#c4)
-- Regression Task: Automobile Dataset[[5]](#c5)
+- Classification Task: Wine Dataset [[4]](#c4)
+- Regression Task: Automobile Dataset [[5]](#c5)
   
 # References
 
-<a name="c1">**[1]**</a>Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, E. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 12, 2825–2830.
+<a name="c1">**[1]**</a> Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, E. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 12, 2825–2830.
  
-<a name="c2">**[2]**</a>Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T.Y. (2017). Lightgbm: A highly efficient gradient boosting decision tree. Advances in neural information processing systems, 30, 3146–3154.
+<a name="c2">**[2]**</a> Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T.Y. (2017). Lightgbm: A highly efficient gradient boosting decision tree. Advances in neural information processing systems, 30, 3146–3154.
 
-<a name="c3">**[3]**</a>Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 785–794). ACM.
+<a name="c3">**[3]**</a> Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 785–794). ACM.
 
-<a name="c4">**[4]**</a>Aeberhard,Stefan & Forina,M.. (1991). Wine. UCI Machine Learning Repository. https://doi.org/10.24432/C5PC7J.
-<a name="c5">**[5]**</a>Schlimmer,Jeffrey. (1987). Automobile. UCI Machine Learning Repository. https://doi.org/10.24432/C5B01C.
+<a name="c4">**[4]**</a> Aeberhard,Stefan & Forina,M.. (1991). Wine. UCI Machine Learning Repository. https://doi.org/10.24432/C5PC7J.
+
+<a name="c5">**[5]**</a> Schlimmer,Jeffrey. (1987). Automobile. UCI Machine Learning Repository. https://doi.org/10.24432/C5B01C.
 
 # License
 
