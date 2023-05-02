@@ -119,7 +119,9 @@ if data is not None:
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=1-splitRatio/100, random_state=7)
         st.text(f'Using {splitRatio} % of the data as data train, with the splitting result:')
         st.write('train shape:',X_train.shape , 'test shape:', X_test.shape)
-        #modelling classficiation
+        st.write('sample data used as train')
+        st.dataframe(X.head(3))
+        #modelling regression
         st.write('training...')
         lr = LinearRegression()
         lr.fit(X_train, y_train)
@@ -230,8 +232,6 @@ if data is not None:
             'MAPE': [mape_lr, mape_svmr, mape_knn, mape_eln, mape_par, mape_rf, mape_gbr, mape_lgbm, mape_xgboost]
                             })
         st.write('Done!') ## for training...
-        st.write('sample data used as train')
-        st.dataframe(X.head(3))
         
         st.write('Result & Model Comparison')
         st.dataframe(models.sort_values(by='RMSE', ascending=True).style.format())
