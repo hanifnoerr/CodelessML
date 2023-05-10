@@ -58,7 +58,7 @@ In the following you will find how they are supposed to be used.
 This application is made using Streamlit, to deploy you can clone this repo and follow [this official guide](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app)
 
 ### Deploy on local machine
-To deploy on local machine, you can use [Anaconda](https://www.anaconda.com/) and import [this environment](https://#).
+To deploy on local machine, you can use [Anaconda](https://www.anaconda.com/) and import [this environment](https://github.com/hanifnoerr/CodelessML/blob/main/anaconda_env.yaml).
 Once your environment is ready, download this repo and run this following command
 ```
 cd \to your CodelessML directory\
