@@ -246,8 +246,6 @@ if data is not None:
                 
         selected_model = st.selectbox("Select model to download", options=list(model_alias.keys()), format_func=alias_func)
         joblib.dump(encoder, 'encoder.pkl')
-        #due some bug, we throw all models
-        joblib.dump(lr, 'lr.joblib')
 
         if selected_model == 'lr':
             joblib.dump(lr, 'model.joblib')
