@@ -4,7 +4,6 @@ st.image('CodelessML.png')
 st.caption('A web-based application for anyone who wants to learn and create machine learning model without coding.')
 
 st.subheader('What is CodelessML')
-st.write(' ini diisi abstrak kali ya, apa latar belakang')
 st.markdown(" **CodelessML** presents a general workflow for easing the process of creating a machine learning model and using the ML model for prediction. This application aims to help non-experts users experience the journey of how a machine learning model is built without requiring them to code. The application has three main menus: EDA, Modelling, and Prediction.")
 st.markdown(" - The _EDA_ menu is used to explore and performs automatic visualisation of any dataset without writing a single code. Just upload your data in a compatible file format (csv or Excel).")
 st.markdown(" - The _Modelling_ menu is used to create machine learning models; you need to select the type of task you want to perform: Classification or Regression. This menu also performs data processing and perform an evaluation of all 9 ML algorithms available in this application. For now, only default data processing, such as dropping columns that have equal or more than 40% of missing values, dropping columns that are 100% unique, inputting missing values with their mean if the data type is number or mode if the data type is a string is available. These steps are necessary because most machine learning algorithms can't deal with missing values and are automatically executed when you click submit button on the _Modelling_ menu.")
