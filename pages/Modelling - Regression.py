@@ -16,6 +16,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import GradientBoostingRegressor
 from lightgbm import LGBMRegressor
 import xgboost as xgb
+import matplotlib.pyplot as plt 
 
 #another libs
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error, mean_absolute_percentage_error
@@ -255,30 +256,74 @@ if data is not None:
                 
         selected_model = st.selectbox("Select model to download", options=list(model_alias.keys()), format_func=alias_func)
         joblib.dump(encoder, 'encoder.pkl')
-        #due some bug, we throw all models
-        joblib.dump(lr, 'lr.joblib')
-
+     
         if selected_model == 'lr':
             joblib.dump(lr, 'model.joblib')
-        if selected_model == 'svm':
+            #create feature importance plot
+            ssrt = lr.coef_.argsort()
+            plt.barh(X.columns[ssrt], lr.coef_[ssrt])
+            plt.xlabel(f"{model_alias.get(selected_model)} Feature Importance")
+            plt.savefig(f"{model_alias.get(selected_model)}.png", bbox_inches='tight')
+
+        if selected_model == 'svmr':
             joblib.dump(svmr, 'model.joblib')
+            plt.draw()
+            plt.savefig(f"{model_alias.get(selected_model)}.png", bbox_inches='tight')
         if selected_model == 'knn':
             joblib.dump(knn, 'model.joblib')
-        if selected_model == 'mnb':
+            plt.draw()
+            plt.savefig(f"{model_alias.get(selected_model)}.png", bbox_inches='tight')
+
+        if selected_model == 'eln':
             joblib.dump(eln, 'model.joblib')
-        if selected_model == 'dt':
+            #create feature importance plot
+            ssrt = eln.coef_.argsort()
+            plt.barh(X.columns[ssrt], eln.coef_[ssrt])
+            plt.xlabel(f"{model_alias.get(selected_model)} Feature Importance")
+            plt.savefig(f"{model_alias.get(selected_model)}.png", bbox_inches='tight')
+            
+        if selected_model == 'par':
             joblib.dump(par, 'model.joblib')
+            #create feature importance plot
+            ssrt = par.coef_.argsort()
+            plt.barh(X.columns[ssrt], par.coef_[ssrt])
+            plt.xlabel(f"{model_alias.get(selected_model)} Feature Importance")
+            plt.savefig(f"{model_alias.get(selected_model)}.png", bbox_inches='tight')
+            
         if selected_model == 'rf':
             joblib.dump(rf, 'model.joblib')
-        if selected_model == 'gbc':
+            #create feature importance plot
+            ssrt = rf.feature_importances_.argsort()
+            plt.barh(X.columns[ssrt], rf.feature_importances_[ssrt])
+            plt.xlabel(f"{model_alias.get(selected_model)} Feature Importance")
+            plt.savefig(f"{model_alias.get(selected_model)}.png", bbox_inches='tight')
+            
+        if selected_model == 'gbr':
             joblib.dump(gbr, 'model.joblib')
+            #create feature importance plot
+            ssrt = gbr.feature_importances_.argsort()
+            plt.barh(X.columns[ssrt], gbr.feature_importances_[ssrt])
+            plt.xlabel(f"{model_alias.get(selected_model)} Feature Importance")
+            plt.savefig(f"{model_alias.get(selected_model)}.png", bbox_inches='tight')
+            
         if selected_model == 'lgbm':
             joblib.dump(lgbm, 'model.joblib')
+            #create feature importance plot
+            ssrt = lgbm.feature_importances_.argsort()
+            plt.barh(X.columns[ssrt], lgbm.feature_importances_[ssrt])
+            plt.xlabel(f"{model_alias.get(selected_model)} Feature Importance")
+            plt.savefig(f"{model_alias.get(selected_model)}.png", bbox_inches='tight')
+            
         if selected_model == 'xgboost':
             joblib.dump(xgboost, 'model.joblib')
+            #create feature importance plot
+            ssrt = xgboost.feature_importances_.argsort()
+            plt.barh(X.columns[ssrt], xgboost.feature_importances_[ssrt])
+            plt.xlabel(f"{model_alias.get(selected_model)} Feature Importance")
+            plt.savefig(f"{model_alias.get(selected_model)}.png", bbox_inches='tight')
+            
         #create csv file that have been encoded
         new_df.to_csv('encoded_data.csv', sep=';')
-        
 
 
         temp = BytesIO()
@@ -287,6 +332,7 @@ if data is not None:
             csv_zip.write("encoder.pkl")
             csv_zip.write("model.joblib")
             csv_zip.write("encoded_data.csv")
+            csv_zip.write(f"{model_alias.get(selected_model)}.png")
 
         st.download_button(
             label=f"Download {model_alias.get(selected_model)} Model",
