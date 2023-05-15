@@ -67,8 +67,7 @@ streamlit run About.py
 
 #### Known Error
 On the EDA menu, when you tick the “categorical data distribution”, this error message appears:
-_AttributeError: 'int' object has no attribute 'astype'_
-Remove this from lines 65 and 66:
+_AttributeError: 'int' object has no attribute 'astype'_ , delete this following code from lines 65 and 66:
 ```
 .astype(int).astype(object)
 ```
