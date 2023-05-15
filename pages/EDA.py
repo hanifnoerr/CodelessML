@@ -62,9 +62,8 @@ if data is not None:
 
     #create plot for all categorical data, with unique value thresholds to mean
     if st.checkbox('Categorical data distribution'):
-        # min_value = dfsum['Uniques'].min().astype(int).astype(object)  #.astype(object) is necessary to make int type instead of numpy.int64
-        min_value = dfsum['Uniques'].min().astype(int).astype(object) 
-        max_value = dfsum['Uniques'].max().astype(int).astype(object)
+        min_value = dfsum['Uniques'].min().astype(int).astype(object) #remove .astype(int).astype(object) if an error message appears
+        max_value = dfsum['Uniques'].max().astype(int).astype(object) #remove .astype(int).astype(object) if an error message appears
         current = dfsum['Uniques'].mean().round().astype(int).astype(object)
         uvt = st.slider('Unique Value Threshold', min_value, max_value, current)
         cat_data = dfsum[(dfsum['dtypes'] == 'object') & (dfsum['Uniques'] <= uvt)] 
