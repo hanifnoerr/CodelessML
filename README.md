@@ -4,7 +4,7 @@ A web-based application for anyone who wants to learn and create machine learnin
 
 # About
 
-CodelessML presents a general workflow for easing the process of creating a machine learning model and using the ML model for prediction. This application aims to help non-experts users experience the journey of how a machine learning model is built without requiring them to code. This application has three main menus: EDA, Modelling, and Prediction.
+CodelessML presents a general workflow for easing the process of creating a machine learning model and using the ML model for prediction. This application aims to help non-expert users experience the journey of how a machine learning model is built without requiring them to code. This application has three main menus: EDA, Modelling, and Prediction.
 
 ## Link to running app
 
