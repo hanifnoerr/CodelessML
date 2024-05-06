@@ -8,7 +8,7 @@ CodelessML presents a general workflow for easing the process of creating a mach
 
 ## Link to running app
 
-https://hanifnoerr-codelessml-about-5p90s9.streamlit.app/
+https://codelessml.streamlit.app/
 
 # User Manual
 
