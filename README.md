@@ -11,6 +11,14 @@ CodelessML presents a general workflow for easing the process of creating a mach
 https://codelessml.streamlit.app/
 For optimal performance, we recommend running CodelessML on your local machine.
 
+# Help Us Improve !
+We’re excited to hear your thoughts about CodelessML, our tool designed to simplify the machine learning process. This project is solely for educational purposes and aims to make it easier for everyone to learn about machine learning.
+Your feedback is crucial for us to enhance its features and usability. Please take a moment to complete our short survey. It will only take a few minutes and will greatly assist us in making CodelessML even better for you and future users.
+
+https://forms.gle/iYJHgDeAWrCaTVCV6
+
+Thank you for your time and valuable input :)
+
 # User Manual
 
 In the following you will find how they are supposed to be used.
@@ -78,14 +86,6 @@ _AttributeError: 'int' object has no attribute 'astype'_ , delete this following
 The following datasets were used for the development and testing of this application:
 - Classification Task: Wine Dataset [[4]](#c4)
 - Regression Task: Automobile Dataset [[5]](#c5)
-
-# Help Us Improve !
-We’re excited to hear your thoughts about CodelessML, our tool designed to simplify the machine learning process. This project is solely for educational purposes and aims to make it easier for everyone to learn about machine learning.
-Your feedback is crucial for us to enhance its features and usability. Please take a moment to complete our short survey. It will only take a few minutes and will greatly assist us in making CodelessML even better for you and future users.
-
-https://forms.gle/iYJHgDeAWrCaTVCV6
-
-Thank you for your time and valuable input!
 
 # References
 
