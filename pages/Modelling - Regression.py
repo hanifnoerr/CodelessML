@@ -56,14 +56,14 @@ if data is not None:
             summary = pd.DataFrame(data.dtypes,columns=['dtypes'])
             summary = summary.reset_index()
             summary['Column'] = summary['index']
-            summary = summary[['Column']]
+            summary = summary[['Column', 'dtypes']]
             summary['Missing'] = data.isnull().sum().values * 100 / len(data) 
             summary['Uniques'] = data.nunique().values * 100 / len(data)
             return summary
         #create summary dataset
         dfsum = dfSummary(df)
         threshold = 40
-        dropped = dfsum[(dfsum['Missing'] >= threshold) | (dfsum['Uniques'] == 100)] #drop columns with equal or more than 40% of missing values & drop columns that is 100% unique
+        dropped = dfsum[(dfsum['Missing'] >= threshold) | ((dfsum['Uniques'] == 100) & (dfsum['dtypes'] == 'object'))] #drop columns with equal or more than 40% of missing values & drop columns that is 100% unique and and of object data type.
         list_dropped = dropped.Column.to_list()
         d = ''
         for i in list_dropped:
