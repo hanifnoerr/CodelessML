@@ -108,7 +108,10 @@ if data is not None:
         obj_columns = obj_columns.to_list()
         #this is necessary because Ordinal encoder fails when there are spaces in the column
         for stripSpaces in obj_columns:
-            new_df[stripSpaces] = new_df[stripSpaces].str.replace(' ', '')
+            try:
+                new_df[stripSpaces] = new_df[stripSpaces].str.replace(' ', '')
+            except:
+                pass
         #encoders
         encoder = OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)
         objToInt = encoder.fit_transform(new_df[obj_columns])
